@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimens_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_top_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_156dp"
+                    android:background="@android:color/white"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never" />
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/page_indicator_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimens_8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:piv_animationType="thinWorm"
+                    app:piv_interactiveAnimation="true"
+                    app:piv_padding="6dp"
+                    app:piv_radius="4dp"
+                    app:piv_selectedColor="#0A89F5"
+                    app:piv_unselectedColor="#C4C4C4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_18dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_10dp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimens_48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimens_22dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_48dp"
+                            android:layout_height="@dimen/dimens_48dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/circle_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_40dp"
+                            android:layout_height="@dimen/dimens_40dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_idea_replace" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimens_8dp"
+                        android:text="Ilmu Satu"
+                        android:textAlignment="center"
+                        android:textColor="#001C40"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimens_48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimens_22dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_48dp"
+                            android:layout_height="@dimen/dimens_48dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/circle_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_32dp"
+                            android:layout_height="@dimen/dimens_32dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/img_business" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimens_8dp"
+                        android:text="Ilmu  Dua"
+                        android:textAlignment="center"
+                        android:textColor="#001C40"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimens_48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimens_22dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_48dp"
+                            android:layout_height="@dimen/dimens_48dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/circle_blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_32dp"
+                            android:layout_height="@dimen/dimens_32dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/img_agreement" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimens_8dp"
+                        android:text="Ilmu Tiga"
+                        android:textAlignment="center"
+                        android:textColor="#001C40"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimens_48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimens_22dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_48dp"
+                            android:layout_height="@dimen/dimens_48dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/circle_blue" />
+
+                        <ImageView
+                            android:id="@+id/iv_icon"
+                            android:layout_width="@dimen/dimens_32dp"
+                            android:layout_height="@dimen/dimens_32dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/img_discuss" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimens_8dp"
+                        android:text="Ilmu Empat"
+                        android:textAlignment="center"
+                        android:textColor="#001C40"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_60dp"
+                android:layout_marginTop="@dimen/dimens_16dp"
+                android:background="#E9F6FF"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/view_left"
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"
+                    android:background="#3BA1F7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_bell_message"
+                    android:layout_width="@dimen/dimens_32dp"
+                    android:layout_height="@dimen/dimens_32dp"
+                    android:layout_marginStart="@dimen/dimens_20dp"
+                    android:src="@drawable/img_bell"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/view_left"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="@dimen/dimens_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimens_20dp"
+                    android:layout_marginEnd="@dimen/dimens_28dp"
+                    android:text="Membershipmu akan habis dalam waktu 10 hari lagi.. top up sekarang"
+                    android:textColor="#001C40"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/iv_close_message"
+                    app:layout_constraintStart_toEndOf="@id/iv_bell_message"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_close_message"
+                    android:layout_width="@dimen/dimens_24dp"
+                    android:layout_height="@dimen/dimens_24dp"
+                    android:layout_marginStart="@dimen/dimens_20dp"
+                    android:layout_marginEnd="@dimen/dimens_14dp"
+                    android:src="@drawable/ic_baseline_close_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_16dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimens_10dp"
+                    android:layout_marginBottom="@dimen/dimens_8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimens_16dp"
+                        android:text="Pilihan kamu"
+                        android:textColor="@color/text_black_default"
+                        android:textSize="@dimen/text_15sp"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_detail_your_choice"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_detail_your_choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_right"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_your_choice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="@dimen/dimens_3dp"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/adapter_slider_horizontal_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimens_10dp"
+                    android:layout_marginBottom="@dimen/dimens_8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimens_16dp"
+                        android:text="Yang akan kamu tonton juga"
+                        android:textColor="@color/text_black_default"
+                        android:textSize="@dimen/text_15sp"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_detail_recommended"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_detail_recommended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_right"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_recommended"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="@dimen/dimens_3dp"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/adapter_slider_horizontal_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_marginBottom="@dimen/dimens_16dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimens_10dp"
+                    android:layout_marginBottom="@dimen/dimens_8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimens_16dp"
+                        android:text="Live event terdekat"
+                        android:textColor="@color/text_black_default"
+                        android:textSize="@dimen/text_15sp"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_detail_live_event"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_detail_live_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_right"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_live_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="@dimen/dimens_3dp"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/adapter_live_event" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
