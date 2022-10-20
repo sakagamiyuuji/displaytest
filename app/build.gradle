@@ -6,6 +6,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storePassword 'asahpolapikir'
+            keyAlias 'asahpolapikir'
+            keyPassword 'asahpolapikir'
+            storeFile file('asahpolapikir.jks')
+        }
+    }
     namespace 'com.test.asahpolapikir.app'
     compileSdk 33
 
@@ -17,11 +25,16 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -41,7 +54,6 @@ android {
 dependencies {
 
     implementation "com.romandanylyk:pageindicatorview:1.0.3"
-
 
     with appDependencies
     implementation project(path: ':core-view')
