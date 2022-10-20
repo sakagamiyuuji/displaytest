@@ -3,6 +3,7 @@ package com.test.asahpolapikir.app
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager.widget.ViewPager
@@ -32,6 +33,10 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
     }
 
     private fun initView() {
+        binding.llFeatIlmuSatu.setOnClickListener { showToast("Coming soon") }
+        binding.llFeatIlmuDua.setOnClickListener { showToast("Coming soon") }
+        binding.llFeatIlmuTiga.setOnClickListener { showToast("Coming soon") }
+        binding.llFeatIlmuEmpat.setOnClickListener { showToast("Coming soon") }
         binding.ivCloseMessage.setOnClickListener { showToast("You can't close this message") }
     }
 

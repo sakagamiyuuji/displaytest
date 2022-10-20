@@ -61,6 +61,7 @@
                 android:padding="@dimen/dimens_10dp">
 
                 <LinearLayout
+                    android:id="@+id/ll_feat_ilmu_satu"
                     android:layout_width="@dimen/dimens_48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/dimens_22dp"
@@ -97,6 +98,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll_feat_ilmu_dua"
                     android:layout_width="@dimen/dimens_48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/dimens_22dp"
@@ -133,6 +135,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll_feat_ilmu_tiga"
                     android:layout_width="@dimen/dimens_48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/dimens_22dp"
@@ -169,6 +172,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll_feat_ilmu_empat"
                     android:layout_width="@dimen/dimens_48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/dimens_22dp"
@@ -239,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dimens_20dp"
                     android:layout_marginEnd="@dimen/dimens_28dp"
-                    android:text="Membershipmu akan habis dalam waktu 10 hari lagi.. top up sekarang"
+                    android:text="@string/text_message"
                     android:textColor="#001C40"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/iv_close_message"
@@ -275,6 +279,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/dimens_16dp"
+                        android:fontFamily="@font/prompt_bold"
                         android:text="Pilihan kamu"
                         android:textColor="@color/text_black_default"
                         android:textSize="@dimen/text_15sp"
@@ -322,6 +327,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/dimens_16dp"
+                        android:fontFamily="@font/prompt_bold"
                         android:text="Yang akan kamu tonton juga"
                         android:textColor="@color/text_black_default"
                         android:textSize="@dimen/text_15sp"
@@ -355,9 +361,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimens_16dp"
+                android:layout_marginBottom="@dimen/dimens_16dp"
                 android:clipChildren="false"
                 android:clipToPadding="false"
-                android:layout_marginBottom="@dimen/dimens_16dp"
                 android:orientation="vertical">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -370,6 +376,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/dimens_16dp"
+                        android:fontFamily="@font/prompt_bold"
                         android:text="Live event terdekat"
                         android:textColor="@color/text_black_default"
                         android:textSize="@dimen/text_15sp"
