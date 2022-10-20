@@ -6,7 +6,7 @@ import android.view.View
 import com.test.asahpolapikir.app.databinding.FragmentComingSoonBinding
 import com.test.asahpolapikir.core.view.base.BaseFragment
 
-class ComingSoonFragment : BaseFragment<FragmentComingSoonBinding>() {
+class ProfileFragment : BaseFragment<FragmentComingSoonBinding>() {
 
     override fun setBinding(layoutInflater: LayoutInflater): FragmentComingSoonBinding {
         return FragmentComingSoonBinding.inflate(layoutInflater)
@@ -17,8 +17,8 @@ class ComingSoonFragment : BaseFragment<FragmentComingSoonBinding>() {
     }
 
     companion object {
-        fun newInstance(): ComingSoonFragment =
-            ComingSoonFragment().apply {
+        fun newInstance(): ProfileFragment =
+            ProfileFragment().apply {
                 val bundle = Bundle()
                 arguments = bundle
             }
